@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Stack | Independent Infrastructure</title>
+    <style>
+        body {
+            background-color: #0d0f12;
+            color: #00ff41;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px;
+            line-height: 1.4;
+            max-width: 900px;
+            margin: auto;
+            text-shadow: 0 0 5px rgba(0, 255, 65, 0.2);
+        }
+
+        pre {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 10pt;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            white-space: pre-wrap;
+        }
+
+        .ascii-art {
+            color: #00ff41;
+            font-weight: bold;
+        }
+
+        .terminal-box {
+            border: 1px solid #00ff41;
+            padding: 20px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 1px dashed #00ff41;
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 14pt;
+            text-transform: uppercase;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #00ff41;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(0, 255, 65, 0.1);
+        }
+
+        .contact-box {
+            border: 2px solid #00ff41;
+            padding: 15px;
+            margin: 30px 0;
+            display: block;
+        }
+
+        a {
+            color: #00ff41;
+            text-decoration: underline;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background-color: #00ff41;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li::before {
+            content: "> ";
+        }
+    </style>
+</head>
+<body>
+
+<pre class="ascii-art">
+   _____        🦏            _    _____ __             __  
+  / ___/ ____ _ ____ _ _____ (_)  / ___// /_ ____ _ ____/ /__
+  \__ \ / __ `// __ `// ___// /   \__ \/ __// __ `// ___/ //_/
+ ___/ // /_/ // /_/ // /   / /    ___/ / /_ / /_/ // /__ / ,<   
+/____/ \__,_/ \__,_//_/   /_/   /____/\__/ \__,_/ \___//_/|_|  
+</pre>
+
+<pre>
+|o ............... o|
+|o ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ o|
+|                   |
+|o ░░░░ ⠶ ░░░░░░░░ o|
+|o ░░░░ ⠩ ░░░░░░░░ o|
+|                   |
+|o ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ o|
+|o ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ o|
+|o ‖‖‖‖‖‖ ⠥ ‖‖‖‖‖‖ o|
+|o ‖‖‖‖‖‖ ⠋ ‖‖‖‖‖‖ o|
+|                   |
+|o  * .   ** . .   o|
+|o ▂▂▂▂▂oo o|
+|                   |
+|o ▔▔ ▔ ░░░ ====== o|
+|                   |
+|   >           <   |
+|   >           <   |
+|   >           <   |
+|                   |
+|                   |
+|                   |
+|                   |
+|      safari?      |
+|                   |
+|                   |
+|                   |
+|                   |
+|                   |
+|                   |
+|___________________|
+</pre>
+
+<p>
+    <strong>Welcome! We're Safari Stack.</strong> We are a boutique infrastructure collective providing high-performance, independent server services with a focus on regional reliability.
+</p>
+
+<p><strong>Current Footprint:</strong></p>
+<ul>
+    <li>Capacity: 4x 42U High-Density Racks</li>
+    <li>Location: Nairobi, Kenya at IXAfrica (NBO1)</li>
+    <li>Connectivity: Dedicated 10Gbps dual-stack transit via SEACOM & Liquid Intelligent Technologies</li>
+    <li>Power: N+1 UPS + On-site Diesel Generation</li>
+</ul>
+
+<h2>-- Datacenter Colocation --</h2>
+<p><em>(Custom configurations available—let's build your stack!)</em></p>
+<ul>
+    <li>$65/month – 1U Chassis | 1Gbps Shared Uplink</li>
+    <li>$80/month – 2U Chassis | 1Gbps Shared Uplink</li>
+    <li>$95/month – 3U Chassis | 1Gbps Shared Uplink</li>
+    <li>$110/month – 4U Chassis | 1Gbps Shared Uplink</li>
+    <li>$300/month – Dedicated 10Gbps Uplink Port</li>
+    <li>Consultation: Hardware sourcing and remote-hands assembly available.</li>
+</ul>
+
+<p><strong>IP Networking:</strong></p>
+<ul>
+    <li>$2/month per IPv4 address</li>
+    <li>Free IPv6 allocation (standard /48 assigned per client)</li>
+</ul>
+
+<h2>-- Virtual Machines --</h2>
+<p>Compute instances are now live on <strong>savanna.digital</strong>.</p>
+<ul>
+    <li>New Users: $20 instant credit.</li>
+    <li>Education: 2x Credit for students with valid .edu email.</li>
+    <li>Referrals: $5 credit for both parties.</li>
+</ul>
+
+<table>
+    <thead>
+        <tr>
+            <th>Size</th>
+            <th>CPU</th>
+            <th>RAM</th>
+            <th>Disk</th>
+            <th>Est. Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Seed</td>
+            <td>1c</td>
+            <td>1g</td>
+            <td>15g</td>
+            <td>~$8/mo</td>
+        </tr>
+        <tr>
+            <td>Base</td>
+            <td>1c</td>
+            <td>2g</td>
+            <td>30g</td>
+            <td>~$15/mo</td>
+        </tr>
+        <tr>
+            <td>Core</td>
+            <td>2c</td>
+            <td>2g</td>
+            <td>60g</td>
+            <td>~$20/mo</td>
+        </tr>
+        <tr>
+            <td>Apex</td>
+            <td>2c</td>
+            <td>4g</td>
+            <td>60g</td>
+            <td>~$25/mo</td>
+        </tr>
+        <tr>
+            <td>Prime</td>
+            <td>4c</td>
+            <td>4g</td>
+            <td>120g</td>
+            <td>~$40/mo</td>
+        </tr>
+        <tr>
+            <td>Ultra</td>
+            <td>4c</td>
+            <td>8g</td>
+            <td>120g</td>
+            <td>~$50/mo</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Deploy via Terminal: <code>ssh [user]@savanna.digital</code><br>
+Documentation: <code>ssh savanna.digital help</code></p>
+
+<h2>-- Managed Hosting --</h2>
+<ul>
+    <li>Static Web: $1/month per domain. Git-integrated deployment via <strong>horizon.host</strong>.</li>
+</ul>
+
+<h2>-- Network Status --</h2>
+<p>Real-time uptime and latency reports: <a href="#">status.safaristack.io</a></p>
+
+<div class="contact-box">
+    <strong>Contact & Community</strong><br>
+    Email: admin@safaristack.io<br>
+    Discord: discord.gg/SafariStack
+</div>
+
+<h2>-- Principles & Finances --</h2>
+<p>Safari Stack operates on a "Community Cloud" model. Our primary goal is to aggregate local demand to unlock enterprise-grade peering and hardware for independent developers.</p>
+<p>We maintain a transparent <strong>15% margin</strong> above operational costs (transit, power, and rack space). These funds are strictly reserved for hardware refreshes, maintenance, and peering expansion.</p>
+<p><strong>Incentive:</strong> Current members receive a <strong>10% discount</strong> on their annual bill for every successful referral.</p>
+
+<p>root@safari-stack:~$ <span class="cursor"></span></p>
+
+</body>
+</html>
